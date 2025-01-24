@@ -15,29 +15,35 @@ body {
 section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     min-height: 100vh;
+    padding: 2rem;
 }
 
 .form-page {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
+    flex-grow: 1;
 }
 
 .form-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    flex-grow: 1;
+    margin-bottom: 1rem;
 }
 
 .form-label {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-section > input {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
 }
 
 .btn-container {
@@ -53,6 +59,7 @@ section {
     margin: 0.5rem;
     font-family: "Poppins", serif;
     font-weight: bold;
+    flex-grow: 1;
 }
 
 .pressed {
@@ -61,4 +68,8 @@ section {
 
 section > footer {
     display: flex;
+    justify-content: space-around;
+}
+
+.arrow-btn {
 }
