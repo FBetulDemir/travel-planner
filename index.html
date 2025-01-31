@@ -6,6 +6,43 @@
     <title>Travel Planner</title>
 </head>
 <body>
-    
+    <header></header>
+    <div class="container">
+        <h2 class="title">Travel Planner</h2>
+        <div class="question">
+            <label>Where do you want to go?</label>
+            <input type="text" id="destination" placeholder="Country, region, specific city">
+        </div>
+
+        <div class="question">
+            <label>When are you planning to travel?</label>
+            <input type="date" id="fromDate" placeholder="DD/MM/YYYY">
+            <input type="date" id="toDate" placeholder="DD/MM/YYYY">
+        </div>
+
+        <div class="question">
+            <label>Who do you travel with?</label>
+            <select id="travelType">
+                <option>Solo</option>
+                <option>Partner</option>
+                <option>Friends</option>
+                <option>Family with kids</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>What is your budget?</label>
+            <select id="budget">
+                <option>Low</option>
+                <option>Mid-range</option>
+                <option>Luxury</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <button>Next</button>
+        </div>
+        <p id="response"></p>
+    </div>
 </body>
 </html>

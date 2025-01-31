@@ -1,0 +1,11 @@
+body {
+    background-color: #7f9796;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+}
