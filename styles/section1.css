@@ -8,4 +8,76 @@ body {
 
 .container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border{
+    width: 50%;
+    border-bottom: 2px solid #fff;
+}
+
+.question{
+    font-size: 18px;
+    margin: 2em 0;
+
+}
+
+.first, .second {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.first input{
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.dates-selection{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.dates-selection label{
+    margin: 0.5em 0;
+}
+
+.dates-selection input{
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5em;
+}
+
+.from, .to{
+    display: flex;
+    flex-direction: column;
+}
+
+.budget button, .travelType button {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin: 0.5em;
+    opacity: 0.9;
+}
+
+button:hover{
+    transition: 0.4s;
+    background-color: rgb(143, 140, 140);
+    color: #fff;
+    border: 1px solid black;
+}
+
+.next-btn{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 5em;
+    padding: 3em;
+    border-radius: 5px;
+    border: 1px solid transparent;
 }

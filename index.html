@@ -3,44 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/section1.css">
     <title>Travel Planner</title>
 </head>
 <body>
     <header></header>
     <div class="container">
         <h2 class="title">Travel Planner</h2>
-        <div class="question">
+        <div class="question first">
             <label>Where do you want to go?</label>
             <input type="text" id="destination" placeholder="Country, region, specific city">
         </div>
+        <div class="border">
 
-        <div class="question">
+        </div>
+
+        <div class="question second">
             <label>When are you planning to travel?</label>
-            <input type="date" id="fromDate" placeholder="DD/MM/YYYY">
-            <input type="date" id="toDate" placeholder="DD/MM/YYYY">
+            <div class="dates-selection">
+                <div class="from">
+                    <label for="fromDate">From:</label>
+                    <input type="date" id="fromDate" >
+                </div>
+                <div class="to">
+                    <label for="toDate">To:</label>
+                    <input type="date" id="toDate" >
+                </div>
+            </div>
+        </div>
+        <div class="border">
+            
         </div>
 
-        <div class="question">
+        <div class="question third">
             <label>Who do you travel with?</label>
-            <select id="travelType">
-                <option>Solo</option>
-                <option>Partner</option>
-                <option>Friends</option>
-                <option>Family with kids</option>
-            </select>
+            <div class="travelType">
+                <button>Solo</button>
+                <button>Partner</button>
+                <button>Friends</button>
+                <button>Family with kids</button>
+            </div>
+        </div>
+        <div class="border">
+            
         </div>
 
-        <div class="question">
+        <div class="question forth">
             <label>What is your budget?</label>
-            <select id="budget">
-                <option>Low</option>
-                <option>Mid-range</option>
-                <option>Luxury</option>
-            </select>
+            <div class="budget">
+                <button>Low</button>
+                <button>Mid-range</button>
+                <button>Luxury</button>
+            </div>
+        </div>
+        <div class="border">
+            
         </div>
 
-        <div class="question">
+        <div class="next-btn">
             <button>Next</button>
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+            class="arrow-btn"
+        >
+            <path
+                d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"
+            />
+        </svg>
         </div>
         <p id="response"></p>
     </div>
