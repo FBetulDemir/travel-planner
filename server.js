@@ -16,7 +16,7 @@ const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 
 app.post("/api/gemini", async (req, res) => {
     try {
-        const { prompt } = req.body; // hämta från sidan
+        const { prompt } = req.body; // ta emot från sidan
         if (!prompt) {
             return res.status(400).json({ error: "Ingen prompt skickades" });
         }
@@ -29,9 +29,7 @@ app.post("/api/gemini", async (req, res) => {
         const result = await model.generateContent(prompt);
         const responseText = result.response.text();
 
-        console.log(result.response);
-
-        res.json({ response: responseText }); // Skicka svaret till sidan..
+        res.json({ response: responseText }); // Svara sidan på /api/gemini
     } catch (error) {
         console.error("Fel vid API-anrop:", error);
         res.status(500).json({ error: "Något gick fel" });
@@ -40,5 +38,5 @@ app.post("/api/gemini", async (req, res) => {
 
 // Starta servern
 app.listen(PORT, () => {
-    console.log(`Servern körs nu på http://localhost:${PORT}`);
+    console.log(`Servern för TRAVEL PLANNER körs nu på ${PORT}`);
 });
